@@ -19,6 +19,20 @@
             <asp:TextBox ID="txtCategory" runat="server" Placeholder="Enter category"></asp:TextBox>
             <asp:Button ID="btnRetrieve" runat="server" Text="Retrieve" OnClick="btnRetrieve_Click" />
         </div>
+
+        <div>
+            <h3>Create a New Article</h3>
+            <asp:TextBox ID="txtTitle" runat="server" Placeholder="Title"></asp:TextBox><br />
+            <asp:TextBox ID="txtAuthor" runat="server" Placeholder="Author"></asp:TextBox><br />
+            <asp:TextBox ID="txtContent" runat="server" TextMode="MultiLine" Rows="5" Placeholder="Content"></asp:TextBox><br />
+            <asp:TextBox ID="txtTags" runat="server" Placeholder="Tags (comma-separated)"></asp:TextBox><br />
+            <asp:TextBox ID="txtImageLink" runat="server" Placeholder="Image Link"></asp:TextBox><br />
+            <asp:Button ID="btnCreateArticle" runat="server" Text="Create Article" OnClick="btnCreateArticle_Click" />
+            <asp:Label ID="lblCreateArticleResult" runat="server" Text=""></asp:Label>
+        </div>
+        <hr />
+        <asp:Label ID="lblResult" runat="server" ForeColor="Red"></asp:Label>
+   
     </form>
 </body>
 </html>

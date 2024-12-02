@@ -15,4 +15,18 @@
     <status>Published</status>
     <views>123</views>
   </article>
+  <article>
+    <id>2</id>
+    <title>Title</title>
+    <author>Author</author>
+    <publicationDate>2024-12-01</publicationDate>
+    <content>Content</content>
+    <tags>
+      <tag>money</tag>
+      <tag>swag</tag>
+    </tags>
+    <imageLink>google.com</imageLink>
+    <status>Draft</status>
+    <views>0</views>
+  </article>
 </articles>
