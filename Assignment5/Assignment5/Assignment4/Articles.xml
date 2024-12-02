@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<articles>
+  <article>
+    <id>1</id>
+    <title>Test2</title>
+    <authorId>1</authorId>
+    <author>Jane Doe</author>
+    <publicationDate>2024-11-17</publicationDate>
+    <content>content test</content>
+    <tags>
+      <tag>TechnologyProgramming</tag>
+    </tags>
+    <imageLink>https://google.com</imageLink>
+    <status>Published</status>
+    <views>123</views>
+  </article>
+</articles>
