@@ -19,7 +19,7 @@ namespace Assignment6_2
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text;
 
-            if (username == "admin" && password == "password")
+            if (username == "TA" && password == "cse445!")
             {
                 Session["LoggedIn"] = true;
                 Response.Redirect("Staff.aspx");
