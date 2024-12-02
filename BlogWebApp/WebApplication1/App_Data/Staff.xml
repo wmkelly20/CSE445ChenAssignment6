@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Staff>
+	<Member>
+		<Username>john.doe</Username>
+		<Password>password123</Password>
+		<Role>Admin</Role>
+		<Permissions>
+			<Permission>ViewReports</Permission>
+			<Permission>EditSettings</Permission>
+			<Permission>ManageUsers</Permission>
+		</Permissions>
+	</Member>
+	<Member>
+		<Username>jane.smith</Username>
+		<Password>securepass456</Password>
+		<Role>Editor</Role>
+		<Permissions>
+			<Permission>EditContent</Permission>
+			<Permission>PublishContent</Permission>
+		</Permissions>
+	</Member>
+	<Member>
+		<Username>guest.user</Username>
+		<Password>guestpass789</Password>
+		<Role>Viewer</Role>
+		<Permissions>
+			<Permission>ViewContent</Permission>
+		</Permissions>
+	</Member>
+</Staff>

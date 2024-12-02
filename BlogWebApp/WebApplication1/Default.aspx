@@ -44,8 +44,12 @@
                             <uc1:LoginControl ID="LoginControl" runat="server" />
                         </td>
                     </tr>
+                    <tr>
+                        <td>Staff Services</td>
+                        <td>Tests staff-related functionality and operations</td>
+                        <td><a href="Staff.aspx">Test Staff Services</a></td>
+                    </tr>
                 </tbody>
-
             </table>
         </div>
     </form>

@@ -78,6 +78,7 @@
     <None Include="Articles.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="App_Data\Staff.xml" />
     <Content Include="Articles.xml" />
     <Content Include="CaptchaControl.ascx" />
     <None Include="Connected Services\ArticlesManagementService\ArticleManagementService1.disco" />
@@ -89,6 +90,7 @@
     </None>
     <Content Include="Global.asax" />
     <Content Include="MemberTryIt.aspx" />
+    <Content Include="Staff.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="Default.aspx" />
@@ -119,6 +121,13 @@
     </Compile>
     <Compile Include="Models\ArticleReaderService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Staff.aspx.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff.aspx.designer.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
