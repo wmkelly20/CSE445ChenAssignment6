@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="w3U+hPygt/EOGqbP0qoRGjOCoc5uE9YgjLSxP+HTEik=">
+<SavedWcfConfigurationInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="9.1" CheckSum="tQzf7p9p4NhW476NvxB8P4QNqGZbvNdDw10iKzDycJU=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="BasicHttpBinding_ArticleManagementService1">
       <properties>
@@ -112,7 +112,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="BasicHttpBinding_ArticleManagementService1" contract="ArticleService.ArticleManagementService1" bindingType="basicHttpBinding" address="http://localhost:64677/ArticleManagementService1.svc" bindingConfiguration="BasicHttpBinding_ArticleManagementService1">
+    <endpoint name="BasicHttpBinding_ArticleManagementService1" contract="ArticlesManagementService.ArticleManagementService1" bindingType="basicHttpBinding" address="http://localhost:64677/ArticleManagementService1.svc" bindingConfiguration="BasicHttpBinding_ArticleManagementService1">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>http://localhost:64677/ArticleManagementService1.svc</serializedValue>
@@ -127,7 +127,7 @@
           <serializedValue>BasicHttpBinding_ArticleManagementService1</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>ArticleService.ArticleManagementService1</serializedValue>
+          <serializedValue>ArticlesManagementService.ArticleManagementService1</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>
