@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Web.UI;
 
-namespace Assignment4
+namespace BlogWebApp
 {
     public partial class CaptchaControl : UserControl
     {
