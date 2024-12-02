@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="f9a6337f-c382-43e0-b567-f0f1c190cd82" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:64677/ArticleManagementService1.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ArticleManagementService.wsdl" MetadataType="Wsdl" ID="63a5b5d1-e2fd-4de2-8529-9908ebde320b" SourceId="1" SourceUrl="http://localhost:64677/ArticleManagementService1.svc?wsdl" />
+    <MetadataFile FileName="ArticleManagementService1.xsd" MetadataType="Schema" ID="472ddb8f-9eb3-442f-b4e6-4e53e9028203" SourceId="1" SourceUrl="http://localhost:64677/ArticleManagementService1.svc?xsd=xsd2" />
+    <MetadataFile FileName="ArticleManagementService11.xsd" MetadataType="Schema" ID="3a98e270-f947-4d03-9bae-115493960371" SourceId="1" SourceUrl="http://localhost:64677/ArticleManagementService1.svc?xsd=xsd1" />
+    <MetadataFile FileName="ArticleManagementService12.xsd" MetadataType="Schema" ID="70753650-a5c1-4921-bf06-75d55edaf3d2" SourceId="1" SourceUrl="http://localhost:64677/ArticleManagementService1.svc?xsd=xsd0" />
+    <MetadataFile FileName="ArticleManagementService1.disco" MetadataType="Disco" ID="7a982b1c-4bed-4a3f-be18-dee4f7db081f" SourceId="1" SourceUrl="http://localhost:64677/ArticleManagementService1.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
