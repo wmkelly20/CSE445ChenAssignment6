@@ -1,7 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Staff.aspx.cs" Inherits="Assignment6_2.Staff" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Staff.aspx.cs" Inherits="Assignment6_2.Staff" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Admin Dashboard - Medium Clone</title>
@@ -196,16 +195,16 @@
                 <asp:Label ID="lblErrorMessage" runat="server" CssClass="error-message"></asp:Label>
                 <div class="input-group">
                     <asp:Label ID="lblUsername" runat="server" Text="Username"></asp:Label>
-    <asp:TextBox ID="txtUsername" runat="server" Placeholder="Enter Username"></asp:TextBox>
+                    <asp:TextBox ID="txtUsername" runat="server" Placeholder="Enter Username"></asp:TextBox>
                 </div>
                 <div class="input-group">
                     <asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>
-    <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" Placeholder="Enter Password"></asp:TextBox>
+                    <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" Placeholder="Enter Password"></asp:TextBox>
                 </div>
                 <div class="input-group">
                     <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="Login_Click" />
                 </div>
-        </div>
+            </div>
         <% } %>
     </form>
 </body>
