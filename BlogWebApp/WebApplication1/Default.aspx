@@ -33,6 +33,11 @@
                         <td><a href="WebForm1.aspx">Test Article Retrieval</a></td>
                     </tr>
                     <tr>
+                        <td>Member Services</td>
+                        <td>Tests member-specific services (CAPTCHA, Article Management, Preferences)</td>
+                        <td><a href="MemberTryIt.aspx">Test Member Services</a></td>
+                    </tr>
+                    <tr>
                         <td>Login Functionality</td>
                         <td>Tests login with user credentials (User: admin | Pass: password)</td>
                         <td>
