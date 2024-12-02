@@ -361,3 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/BlogWebApp/WebApplication1/Connected Services/ArticlesManagementService/ArticleManagementService1.xsd
+/BlogWebApp/WebApplication1/Connected Services/ArticlesManagementService/ArticleManagementService11.xsd
+/BlogWebApp/WebApplication1/Connected Services/ArticlesManagementService/ArticleManagementService12.xsd
+/BlogWebApp/WebApplication1/Connected Services/ArticlesManagementService/configuration91.svcinfo
+/BlogWebApp/WebApplication1/Connected Services/ArticlesManagementService/Reference.cs
+/BlogWebApp/WebApplication1/Connected Services/ArticlesManagementService/Reference.svcmap
+/BlogWebApp/WebApplication1/Properties/DataSources/ArticleManagementService.Article.datasource
+/.gitignore
