@@ -44,7 +44,7 @@ namespace BlogWebApp
             ArticleReaderService articleService = new ArticleReaderService();
 
             // Get articles by category
-            var articles = articleService.GetArticlesByCategory(category, xmlPath);
+            var articles = articleService.GetArticlesByCategory(category);
 
             // Display the articles
             if (articles.Count > 0)

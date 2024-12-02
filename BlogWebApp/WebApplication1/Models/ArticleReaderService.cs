@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
+using WebApplication1.ArticlesManagementService;
 
-namespace BlogWebApp.Models // Add this namespace
+namespace BlogWebApp.Models
 {
     public class Article
     {
@@ -15,21 +16,32 @@ namespace BlogWebApp.Models // Add this namespace
 
     public class ArticleReaderService
     {
-        public List<Article> GetArticlesByCategory(string category, string xmlPath)
+        public List<Article> GetArticlesByCategory(string category)
         {
-            XDocument doc = XDocument.Load(xmlPath);
+            // Instantiate the service client
+            var client = new ArticleManagementService1Client();
 
-            var articles = doc.Descendants("article")
-                .Where(a => a.Element("category")?.Value == category)
-                .Select(a => new Article
-                {
-                    Title = a.Element("title")?.Value,
-                    Author = a.Element("author")?.Value,
-                    Category = a.Element("category")?.Value,
-                    Content = a.Element("content")?.Value
-                }).ToList();
+            // Call the service method to get all articles
+            var articles = client.GetAllArticles();
 
-            return articles;
+            // Map ArticleManagementService.Article to BlogWebApp.Models.Article
+            var mappedArticles = articles.Select(a => new Article
+            {
+                Title = a.Title,
+                Author = a.Author,
+                Category = a.Tags,
+                Content = a.Content
+            }).ToList();
+
+            // Optionally filter articles by category
+            if (!string.IsNullOrEmpty(category))
+            {
+                mappedArticles = mappedArticles
+                    .Where(a => a.Category?.Contains(category) ?? false)
+                    .ToList();
+            }
+
+            return mappedArticles;
         }
     }
 }

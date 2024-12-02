@@ -46,7 +46,15 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Primitives, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Serialization.Primitives.4.3.0\lib\net46\System.Runtime.Serialization.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -79,8 +87,14 @@
     </None>
     <Content Include="Articles.xml" />
     <Content Include="CaptchaControl.ascx" />
+    <None Include="Connected Services\ArticlesManagementService\ArticleManagementService1.disco" />
+    <None Include="Connected Services\ArticlesManagementService\configuration91.svcinfo" />
+    <None Include="Connected Services\ArticlesManagementService\configuration.svcinfo" />
+    <None Include="Connected Services\ArticlesManagementService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Global.asax" />
-    <Content Include="MemberTryIt.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="Default.aspx" />
@@ -99,15 +113,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\ArticlesManagementService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="MemberTryIt.aspx.cs">
-      <DependentUpon>MemberTryIt.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MemberTryIt.aspx.designer.cs">
-      <DependentUpon>MemberTryIt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\ArticleReaderService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -147,7 +159,18 @@
     <Content Include="Connected Services\ArticleService\WebApplication1.ArticleService.Article.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Connected Services\ArticlesManagementService\ArticleManagementService.wsdl" />
+    <None Include="Connected Services\ArticlesManagementService\ArticleManagementService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ArticlesManagementService\ArticleManagementService11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ArticlesManagementService\ArticleManagementService12.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
+    <Content Include="Properties\DataSources\ArticleManagementService.Article.datasource" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -160,6 +183,10 @@
       <Project>{98733543-2274-485f-84bd-d17accdb5fb3}</Project>
       <Name>ArticleService</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Assignment5\ArticlesManagementService\ArticlesManagementService.csproj">
+      <Project>{4ad891a4-c990-4f2c-a88d-6d93e56876b2}</Project>
+      <Name>ArticlesManagementService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\HashingLibrary\HashingLibrary\HashingLibrary.csproj">
       <Project>{ea811641-695b-4eea-9571-8ec99885b86a}</Project>
       <Name>HashingLibrary</Name>
@@ -170,6 +197,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ArticleService\" />
+    <WCFMetadataStorage Include="Connected Services\ArticlesManagementService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
