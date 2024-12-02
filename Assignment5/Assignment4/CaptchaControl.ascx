@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CaptchaControl.ascx.cs" Inherits="Assignment4.CaptchaControl" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CaptchaControl.ascx.cs" Inherits="BlogWebApp.CaptchaControl" %>
 <div>
     <asp:Image ID="ImgCaptcha" runat="server" />
     <asp:TextBox ID="TxtCaptchaAnswer" runat="server" placeholder="Enter CAPTCHA" />

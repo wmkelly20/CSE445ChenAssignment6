@@ -1,11 +1,11 @@
-﻿using Assignment4.ArticleService;
+﻿using BlogWebApp.ArticleService;
 using System;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Xml.Linq;
 
-namespace Assignment4
+namespace BlogWebApp
 {
     public partial class MemberTryIt : System.Web.UI.Page
     {

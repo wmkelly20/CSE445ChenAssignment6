@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MemberTryIt.aspx.cs" Inherits="Assignment4.MemberTryIt" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MemberTryIt.aspx.cs" Inherits="BlogWebApp.MemberTryIt" %>
 <%@ Register Src="~/CaptchaControl.ascx" TagName="CaptchaControl" TagPrefix="uc" %>
 
 

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Assignment4
+namespace BlogWebApp
 {
 
 
@@ -30,7 +30,7 @@ namespace Assignment4
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Assignment4.CaptchaControl CaptchaControl;
+        protected global::BlogWebApp.CaptchaControl CaptchaControl;
 
         /// <summary>
         /// BtnValidateCaptcha control.

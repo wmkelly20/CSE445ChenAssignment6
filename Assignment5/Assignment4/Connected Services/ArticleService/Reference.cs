@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Assignment4.ArticleService {
+namespace BlogWebApp.ArticleService {
     using System.Runtime.Serialization;
     using System;
     
@@ -177,25 +177,25 @@ namespace Assignment4.ArticleService {
         System.Threading.Tasks.Task<bool> DeleteArticleAsync(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ArticleManagementService1/GetArticle", ReplyAction="http://tempuri.org/ArticleManagementService1/GetArticleResponse")]
-        Assignment4.ArticleService.Article GetArticle(int id);
+        BlogWebApp.ArticleService.Article GetArticle(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ArticleManagementService1/GetArticle", ReplyAction="http://tempuri.org/ArticleManagementService1/GetArticleResponse")]
-        System.Threading.Tasks.Task<Assignment4.ArticleService.Article> GetArticleAsync(int id);
+        System.Threading.Tasks.Task<BlogWebApp.ArticleService.Article> GetArticleAsync(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ArticleManagementService1/GetAllArticles", ReplyAction="http://tempuri.org/ArticleManagementService1/GetAllArticlesResponse")]
-        Assignment4.ArticleService.Article[] GetAllArticles();
+        BlogWebApp.ArticleService.Article[] GetAllArticles();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ArticleManagementService1/GetAllArticles", ReplyAction="http://tempuri.org/ArticleManagementService1/GetAllArticlesResponse")]
-        System.Threading.Tasks.Task<Assignment4.ArticleService.Article[]> GetAllArticlesAsync();
+        System.Threading.Tasks.Task<BlogWebApp.ArticleService.Article[]> GetAllArticlesAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ArticleManagementService1Channel : Assignment4.ArticleService.ArticleManagementService1, System.ServiceModel.IClientChannel {
+    public interface ArticleManagementService1Channel : BlogWebApp.ArticleService.ArticleManagementService1, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ArticleManagementService1Client : System.ServiceModel.ClientBase<Assignment4.ArticleService.ArticleManagementService1>, Assignment4.ArticleService.ArticleManagementService1 {
+    public partial class ArticleManagementService1Client : System.ServiceModel.ClientBase<BlogWebApp.ArticleService.ArticleManagementService1>, BlogWebApp.ArticleService.ArticleManagementService1 {
         
         public ArticleManagementService1Client() {
         }
@@ -240,19 +240,19 @@ namespace Assignment4.ArticleService {
             return base.Channel.DeleteArticleAsync(id);
         }
         
-        public Assignment4.ArticleService.Article GetArticle(int id) {
+        public BlogWebApp.ArticleService.Article GetArticle(int id) {
             return base.Channel.GetArticle(id);
         }
         
-        public System.Threading.Tasks.Task<Assignment4.ArticleService.Article> GetArticleAsync(int id) {
+        public System.Threading.Tasks.Task<BlogWebApp.ArticleService.Article> GetArticleAsync(int id) {
             return base.Channel.GetArticleAsync(id);
         }
         
-        public Assignment4.ArticleService.Article[] GetAllArticles() {
+        public BlogWebApp.ArticleService.Article[] GetAllArticles() {
             return base.Channel.GetAllArticles();
         }
         
-        public System.Threading.Tasks.Task<Assignment4.ArticleService.Article[]> GetAllArticlesAsync() {
+        public System.Threading.Tasks.Task<BlogWebApp.ArticleService.Article[]> GetAllArticlesAsync() {
             return base.Channel.GetAllArticlesAsync();
         }
     }
