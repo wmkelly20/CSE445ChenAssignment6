@@ -78,13 +78,22 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="Articles.xml" />
+    <Content Include="CaptchaControl.ascx" />
     <Content Include="Global.asax" />
+    <Content Include="MemberTryIt.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="LoginControl.ascx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaptchaControl.ascx.cs">
+      <DependentUpon>CaptchaControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CaptchaControl.ascx.designer.cs">
+      <DependentUpon>CaptchaControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\ArticleService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -92,6 +101,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MemberTryIt.aspx.cs">
+      <DependentUpon>MemberTryIt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberTryIt.aspx.designer.cs">
+      <DependentUpon>MemberTryIt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\ArticleReaderService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
