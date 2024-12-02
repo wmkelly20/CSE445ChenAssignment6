@@ -1,0 +1,14 @@
+﻿<articles>
+  <article>
+    <title>Introduction to ASP.NET</title>
+    <author>John Doe</author>
+    <category>Programming</category>
+    <content>ASP.NET is a framework for building web apps...</content>
+  </article>
+  <article>
+    <title>Getting Started with Blogging</title>
+    <author>Jane Smith</author>
+    <category>Writing</category>
+    <content>Blogging is a great way to share your ideas...</content>
+  </article>
+</articles>

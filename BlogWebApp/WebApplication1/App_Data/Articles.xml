@@ -1,0 +1,14 @@
+﻿<articles>
+	<article>
+		<title>Understanding Personal Finance</title>
+		<author>Jane Doe</author>
+		<category>money</category>
+		<content>This article explains the basics of personal finance and budgeting.</content>
+	</article>
+	<article>
+		<title>Saving for Retirement</title>
+		<author>John Smith</author>
+		<category>money</category>
+		<content>Learn how to effectively save for retirement starting early in life.</content>
+	</article>
+</articles>
